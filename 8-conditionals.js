@@ -18,8 +18,8 @@ if(esUsuario) {
 
 // Ejemplo de cómo haríamos una validación
 
-var edad = 18; 
-var accion; 
+let edad = 18; 
+let accion; 
 
 if(edad >= 18) {
     accion = 'Puede votar'
@@ -31,8 +31,8 @@ console.log(accion);
 
 // Ejemplo de cómo utilizaremos el else if
 
-var edad = 18; 
-var accion;  
+let edad = 18; 
+let accion;  
 
 if(edad === 18) {
     accion = 'Puede votar, será su 1ra votación'
@@ -50,8 +50,8 @@ console.log(accion);
 
 // Operador ternario 
 
-var numero = 1; 
-var resultado; 
+let numero = 1; 
+let resultado; 
 
 if(numero === 1) {
     resultado = 'Sí son un 1'; 
@@ -61,8 +61,8 @@ if(numero === 1) {
 
 condition ? true : false; 
 
-var numero = 1; 
-var resultado = numero === 1 ? 'Sí son un 1' : 'No soy un 1';
+let numero = 1; 
+let resultado = numero === 1 ? 'Sí son un 1' : 'No soy un 1';
 
 console.log(resultado);
 
@@ -75,8 +75,36 @@ console.log(resultado);
 /*  
 
 Variables piedra, papel y tiejeras 
-una funcion que utilice cindicionales para validar si el parametro que le estoy pasando gana o pierde. 
+una funcion que utilice condicionales para validar si el parametro que le estoy pasando gana o pierde. 
 
 y que la funcion al final me regrese el resultado de si gané, o  perdí. 
 
 */ 
+
+let opc1 = 'piedra';
+let opc2 = 'papel';
+let opc3 = 'tijera';
+
+// ================================
+
+let op1 = "Piedra";
+let op2 = "Papel";
+let op3 = "Tijera";
+
+var resultado = function(user, cpu){
+    if(user != cpu){
+        if(user === op1 && cpu === op3){
+            console.log("el usuario GANO con "+ op1)
+        }else if(user === op2 && cpu === op1){
+            console.log( "el usuario GANO con " + op2)
+        }else if(user === op3 && cpu === op2){
+            console.log("el usuario GANO con " + op3)
+        }else{
+            console.log("La CPU Gano!!")
+        }
+    }else if(user === cpu){
+        console.log("Empate")
+    }
+};
+
+resultado(op1,op3) //el usuario GANO con Piedra```

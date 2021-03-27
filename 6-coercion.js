@@ -2,35 +2,35 @@
 
 // === Implicit Coercion === 
 
-var a = 20;
+let a = 20;
 
-var b = a + ""; 
+let b = a + ""; 
 
 // más ejemplos
 
-var a = [1,2];
-var b = [3,4]; 
+let a = [1,2];
+let b = [3,4]; 
 
 a + b // En este ejemplo, por la concatenación, ambos arrays son obligados a convertirse en strings, y luego se juntan.
 
 // === Explicit coercion ===
 
-var c = String( a );
+let c = String( a );
 
-var d = Number( c );
+let d = Number( c );
 
 // Otro ejemplo
 
-var a = 30; 
-var b = a.toString();
+let a = 30; 
+let b = a.toString();
 
-var c = "100"; 
-var d = +c; // Unary operator '+' de forma explícita convierte a número
+let c = "100"; 
+let d = +c; // Unary operator '+' de forma explícita convierte a número
 
 // más ejemplos
 
-var num1 = "3.14"; 
-var num2 = 5 + +num1; 
+let num1 = "3.14"; 
+let num2 = 5 + +num1; 
 
 /*  
 

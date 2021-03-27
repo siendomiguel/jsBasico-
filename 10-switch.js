@@ -1,7 +1,7 @@
 // Switch es una forma diferente de validar, está depende del caso que sea verdad. 
 
-var numero = 1; 
-var resultado; 
+let numero = 1; 
+let resultado; 
 
 /* Switch compara con un === por esa razón los elementos tiene que ser idénticos */ 
 

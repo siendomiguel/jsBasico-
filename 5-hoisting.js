@@ -4,11 +4,11 @@
 // Qué resultado esperas que nos aparezca si corremos este ejemplo? "undefined"
 console.log(miNombre);
 
-var miNombre = "Diego";
+let miNombre = "Diego";
 
 // Lo que sucede con el hoisting
 
-var miNombre = undefined;
+let miNombre = undefined;
 
 console.log(miNombre + "soy hoisting");
 
@@ -23,7 +23,7 @@ function hey() {
     console.log('Hola ' + miNombre);
 };
 
-var miNombre = 'Diego';
+let miNombre = 'Diego';
 
 // Lo que sucede con hoisting 
 
@@ -31,8 +31,10 @@ function hey() {  //La función se declara hasta arriba, y después se declaran 
     console.log('Hola ' + miNombre);
 };
 
-var miNombre;
+let miNombre;
 
 hey();
 
 miNombre = 'Diego';
+
+// Video Explicativo https://www.youtube.com/watch?v=uI6o97A4IrI

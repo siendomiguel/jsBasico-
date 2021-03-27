@@ -2,11 +2,11 @@
 
 // Los arrays son objetos de tipo lista cuyo prototipo tiene métodos para realizar operaciones de recorrido y mutación
 
-var frutas = []; // Array Literal Syntax 
+let frutas = []; // Array Literal Syntax 
 
-var frutas = ["Manzana", "Platano", "Cereza", "Fresa"]; 
+let frutas = ["Manzana", "Platano", "Cereza", "Fresa"]; 
 console.log(frutas); 
-console.log(frutas.length); // length es una propiedad del array
+console.log(frutas.length); // length es una propiedad del array == Cuenta cuantos elementos hay dentro
 
 // Acceder (por índice) a un elemento del Array
 console.log(frutas[0]);   // Los arrays iician en "0" 
@@ -17,26 +17,25 @@ console.log(frutas[0]);   // Los arrays iician en "0"
 
 // .push();
 
- var masFrutas = frutas.push("Uvas"); // Esté metodo añadirá "Uvas" añ final del array
+ let masFrutas = frutas.push("Uvas"); // Esté metodo añadirá "Uvas" añ final del array
  console.log(frutas);
 
 // .pop();
 
- var utlimo = frutas.pop("Uvas"); // Eliminará "Uvas" del final 
+ let utlimo = frutas.pop("Uvas"); // Eliminará "Uvas" del final 
  console.log(frutas);
 
 // unshift()
 
-var nuevaLogitud = frutas.unshift("Uvas"); // Añade "Uvas" al inicio 
+let nuevaLogitud = frutas.unshift("Uvas"); // Añade "Uvas" al inicio 
 console.log(frutas);
 
 // shift()
 
-var borrarFruta = frutas.shift("Manzana"); // Elimina "Manzana" del inico
+let borrarFruta = frutas.shift("Manzana"); // Elimina "Manzana" del inico
 console.log(frutas);
 
 // .indexOf();
 
-var posicion = frutas.indexOf("Platano"); // te dará la posición de ese item en el array
+let posicion = frutas.indexOf("Platano"); // te dará la posición de ese item en el array
 console.log(frutas);
-

@@ -26,7 +26,7 @@ var a = 1;
 
 3 === '3' // es estrictamente igual 
 
-5 < 3, 5 <= 3, 5 > 3, 5 >= 3 // menor, menor o igual, mayo, mayor o igual 
+5 < 3, 5 <= 3, 5 > 3, 5 >= 3 // menor, menor o igual, mayor, mayor o igual 
 
 a && b // operador and (y), este operador genera una valicación siempe y cuando ambas variables sean verdad, "var 1 y var 2"
 
@@ -37,7 +37,7 @@ true || false // operador or (o), este operador genera una validacion siempre y 
 
 // Operador que solo se pueden utilizar con variables 
 
-var edad = 40;
+let edad = 40;
 
 edad++;  // operador de incremento por 1
 edad += 2; 
